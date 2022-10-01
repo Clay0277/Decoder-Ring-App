@@ -1,4 +1,4 @@
-const polybius = require("../src/polybius");
+const { polybius } = require("../src/polybius");
 const { expect } = require("chai");
 
 describe("polybius()", () => {

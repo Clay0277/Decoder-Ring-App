@@ -1,4 +1,4 @@
-const caesar = require("../src/caesar");
+const { caesar } = require("../src/caesar");
 const { expect } = require("chai");
 
 describe("caesar()", () =>{
@@ -42,7 +42,7 @@ describe("encoding a message", () => {
   it("encodes '*Clayton L. Allmond!' shift+1 correctly", () => {
     input = "*Clayton L. Allmond!";
     shift = 1;
-    const expected = "*dmbzupo m. zmmnpoe!";
+    const expected = "*dmbzupo m. bmmnpoe!";
     const actual = caesar(input, shift);
     expect(actual).to.deep.equal(expected);
   });
@@ -58,20 +58,21 @@ describe("encoding a message", () => {
 });
 
 describe("decoding a message", () => {
-    it("decodes '*bkzxsnm k. zkklnmc!' shift-1 correctly", () => {
-      input = "*bkzxsnm k. zkklnmc!";
+    it("decodes '*dmbzupo m. bmmnpoe!' shift-1 correctly", () => {
+      input = "*dmbzupo m. bmmnpoe!";
       shift = -1;
       const expected = "*clayton l. allmond!";
       const actual = caesar(input, shift);
       expect(actual).to.deep.equal(expected);
     });
 
-    it("decodes '*aqhzm y. gnnj!' shift+1 correctly", () => {
-      input = "*dmbzupo m. zmmnpoe!";
+    it("decodes '*bkzxsnm k. zkklnmc!' shift+1 correctly", () => {
+      input = "*bkzxsnm k. zkklnmc!";
       shift = 1;
       const expected = "*clayton l. allmond!";
       const actual = caesar(input, shift);
       expect(actual).to.deep.equal(expected);
     });
   });
+
 
