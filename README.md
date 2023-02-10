@@ -13,7 +13,7 @@ This application allows users to decode messages using 3 different methods. The 
 ![Screen Shot 2023-02-10 at 11 50 15 AM](https://user-images.githubusercontent.com/111237794/218149464-5c6df1cf-4583-42d5-8d5a-958f748d4e0d.png)
 ![Screen Shot 2023-02-10 at 11 49 04 AM](https://user-images.githubusercontent.com/111237794/218149504-87c9db38-8e05-4daa-8c1e-59d059a34717.png)
 
-
+## Technology
 
 **Built With**:
 + JavaScript ES6
